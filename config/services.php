@@ -35,4 +35,15 @@ return [
         ],
     ],
 
+    'affordmed' => [
+        'email' => env('LOG_EMAIL'),
+        'name' => env('LOG_NAME'),
+        'roll_no' => env('LOG_ROLL_NO'),
+        'access_code' => env('LOG_ACCESS_CODE'),
+        'client_id' => env('LOG_CLIENT_ID'),
+        'client_secret' => env('LOG_CLIENT_SECRET'),
+        'api_base' => env('NOTIFICATION_API_BASE'),
+        'access_token' => env('LOG_ACCESS_TOKEN'),
+    ],
+
 ];

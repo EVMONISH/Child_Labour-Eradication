@@ -13,7 +13,7 @@ class ComplaintController extends Controller
         return view('complaint.create');
     }
 
-    public function store(Request $request)
+    public function store(Request $request, \App\Services\AffordMedService $affordMed)
     {
         $request->validate([
             'description' => 'required|min:20',
@@ -43,8 +43,16 @@ class ComplaintController extends Controller
             'status'         => 'pending',
         ]);
 
+        // Send notification to evaluation service
+        $affordMed->sendNotification('new_complaint', [
+            'tracking_id' => $complaint->tracking_id,
+            'location' => $complaint->location,
+            'urgency' => $request->urgency,
+        ]);
+
         return redirect()->route('complaint.success', $complaint->tracking_id);
     }
+
 
     public function success($trackingId)
     {
