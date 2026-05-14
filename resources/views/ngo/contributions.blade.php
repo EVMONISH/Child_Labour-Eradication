@@ -226,14 +226,13 @@
         <div class="sec-title">Volunteer Certificate</div>
     </div>
     <div class="detail-grid" style="margin-bottom: 20px;">
-        <div class="detail-key">Display Name</div><div class="detail-val" style="font-weight:600;">Monish</div>
-        <div class="detail-key">Organization</div><div class="detail-val">Hope Old Age Home</div>
+        <div class="detail-key">Display Name</div><div class="detail-val" style="font-weight:600;">E.V. Monish</div>
+        <div class="detail-key">Organization</div><div class="detail-val">The Windson Charitable Trust</div>
         <div class="detail-key">Duration</div><div class="detail-val">45 Days</div>
     </div>
     
     <div class="certificate-container">
-        <!-- Using a placeholder for the certificate -->
-        <img src="https://placehold.co/1200x800/1e2d45/f1f5f9?text=Certificate+of+Appreciation%0A%0AThis+certifies+that+Monish%0Ahas+successfully+completed+45+days+of+volunteer+service" alt="Volunteer Certificate" class="certificate-img">
+        <img src="{{ asset('assets/images/volunteer_certificate.jpg') }}" alt="Volunteer Certificate" class="certificate-img">
     </div>
     <div style="text-align: center;">
         <button class="btn btn-primary">⬇ Download Certificate</button>
@@ -271,7 +270,7 @@
     <div class="quote-text">
         This experience of serving people in need for 45 days inspired me to build this system. Every human being deserves care, dignity and support — and technology can help make that possible.
     </div>
-    <div class="quote-author">Monish</div>
+    <div class="quote-author">E.V. Monish</div>
     <div class="quote-designation">Student Volunteer</div>
 </div>
 
