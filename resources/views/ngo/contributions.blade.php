@@ -235,7 +235,7 @@
         <img src="{{ asset('assets/images/volunteer_certificate.jpg') }}" alt="Volunteer Certificate" class="certificate-img">
     </div>
     <div style="text-align: center;">
-        <button class="btn btn-primary">⬇ Download Certificate</button>
+        <a href="{{ asset('assets/images/volunteer_certificate.jpg') }}" download="Volunteer_Certificate_Monish.jpg" class="btn btn-primary">⬇ Download Certificate</a>
     </div>
 </div>
 
